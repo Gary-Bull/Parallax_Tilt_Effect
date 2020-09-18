@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Parallax Tilt Effect</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="imgBx">
+          <img src="./img/jamie.jpg" alt="" />
+        </div>
+        <div class="contentBx">
+          <h2>Mario</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            autem amet aliquam totam expedita dolore error impedit animi commodi
+            suscipit dignissimos facere perferendis.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img src="./img/isaac.jpg" alt="" />
+        </div>
+        <div class="contentBx">
+          <h2>Luigi</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            autem amet aliquam totam expedita dolore error impedit animi commodi
+            suscipit dignissimos facere perferendis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".box"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
